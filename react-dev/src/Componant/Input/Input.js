@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import Input from "@mui/joy/Input";
 import { Container } from "@mui/material";
-import { Theme, useTheme } from "@mui/material/styles";
+import { useTheme } from "@mui/material/styles";
 import OutlinedInput from "@mui/material/OutlinedInput";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
@@ -51,15 +50,12 @@ function InputField() {
   const [personName, setPersonName] = useState([]);
   const [modal, setModal] = useState(false);
 
-  // ============================================================
-
   const onModalHandler = (e) => {
     setModal(true);
   };
 
   const handleCloseModal = () => {
     setModal(false);
-    console.log("=================================");
   };
   // ============================================================
 
@@ -93,6 +89,7 @@ function InputField() {
                 key={name}
                 value={name}
                 style={getStyles(name, personName, theme)}
+                // onChange={onChangeHandlar}
                 onClick={(e) => onModalHandler(e)}
               >
                 {name}
