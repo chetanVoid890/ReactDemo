@@ -8,7 +8,7 @@ const Form = (props) => {
       <div>{props.modal ? <InputField /> : ""}</div>
 
       <button className="form-button" onClick={props.onAddHandler}>
-        ADD
+        ADD Input field
       </button>
     </div>
   );

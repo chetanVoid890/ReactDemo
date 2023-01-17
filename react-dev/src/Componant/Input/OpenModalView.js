@@ -10,7 +10,6 @@ import {
 } from "@mui/material";
 
 function OpenModalView({ closeModal }) {
-  console.log("closeModal========================");
   return (
     <>
       <Card
@@ -42,7 +41,6 @@ function OpenModalView({ closeModal }) {
           {/* <br></br> */}
           <label>placeholder</label>
           <input />
-          {/* <Stack alignItems="flex-end" sx={{ my: 3 }} className="ModalButton"> */}
           <Button variant="outlined" color="error" onClick={closeModal}>
             Cancel
           </Button>
