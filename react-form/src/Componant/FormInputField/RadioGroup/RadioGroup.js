@@ -1,7 +1,6 @@
 import { Radio, Space } from "antd";
 
 const RadioGroupItem = (props) => {
-  console.log("props==================", props);
   return (
     <>
       <Radio.Group name={props.fieldName}>

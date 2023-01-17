@@ -5,21 +5,18 @@ const FormDate = ({ form }) => {
     <>
       <Form form={form}>
         <Form.Item label="Title" name="label">
-          <Input placeholder="Enter Title" />
+          <Input />
         </Form.Item>
         <Form.Item label="PlaceHolder" name="placeHolder">
-          <Input placeholder="Enter PlaceHolder" />
+          <Input />
         </Form.Item>
         <Form.Item label="Default Selected Date" name="defaultValue">
-          <DatePicker
-            placeholder="Select Default Date"
-            className="w-full"
-          ></DatePicker>
+          <DatePicker></DatePicker>
         </Form.Item>
         <div className="flex">
           <Space size="middle">
             <Form.Item label="Disabled Date" name="disabledDate">
-              <DatePicker placeholder="Select Disabled Date"></DatePicker>
+              <DatePicker></DatePicker>
             </Form.Item>
             <Form.Item name="disabledDateNav">
               <Radio.Group>

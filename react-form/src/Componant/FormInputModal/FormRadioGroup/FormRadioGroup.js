@@ -11,7 +11,7 @@ const FormRadioGroup = ({ form }) => {
           <Input />
         </Form.Item>
         <Form.Item label="PlaceHolder" name="placeHolder">
-          <Input placeholder="Enter PlaceHolder" />
+          <Input />
         </Form.Item>
         <Form.Item label="Direction" name="direction">
           <Select>
@@ -29,35 +29,22 @@ const FormRadioGroup = ({ form }) => {
                       {...restField}
                       name={[name, "Key"]}
                       fieldKey={[key, "Key"]}
-                      rules={[{ required: true, message: "Please Input key" }]}
                     >
-                      <Input placeholder="Enter Key name" />
+                      <Input />
                     </Form.Item>
                     <Form.Item
                       {...restField}
                       name={[name, "Value"]}
                       fieldKey={[key, "Value"]}
-                      rules={[
-                        { required: true, message: "Please Input Value" },
-                      ]}
                     >
-                      <Input
-                        placeholder="Enter Value"
-                        className="lowercase"
-                        autoCapitalize="none"
-                      />
+                      <Input />
                     </Form.Item>
                     <MinusCircleOutlined onClick={() => remove(name)} />
                   </Space>
                 );
               })}
               <Form.Item>
-                <Button
-                  type="dashed"
-                  onClick={() => add()}
-                  block
-                  icon={<PlusOutlined />}
-                >
+                <Button onClick={() => add()} block icon={<PlusOutlined />}>
                   Add Options
                 </Button>
               </Form.Item>

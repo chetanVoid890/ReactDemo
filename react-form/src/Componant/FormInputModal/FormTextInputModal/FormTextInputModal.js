@@ -1,6 +1,7 @@
 import { Form, Input } from "antd";
 import React from "react";
 const FormTextInputModal = ({ form, modal }) => {
+  // console.log("form", form, "modal", modal);
   return (
     <>
       <Form form={form} open={modal}>

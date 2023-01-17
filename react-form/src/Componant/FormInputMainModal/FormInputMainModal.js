@@ -1,10 +1,7 @@
 import { Modal } from "antd";
 import { useDispatch, useSelector } from "react-redux";
-// import { closeModal } from "../../redux/actions/modal";
 
 const FormInputMainModal = ({ onSubmit, children, modal, onClick }) => {
-  console.log("hellooo-============================");
-
   return (
     <Modal
       open={modal}

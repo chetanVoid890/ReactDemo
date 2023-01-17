@@ -8,7 +8,6 @@ const TextAreaItem = ({ fieldRequired, fieldName, fieldPlaceHolder }) => {
       required={fieldRequired}
       placeholder={fieldPlaceHolder}
       name={fieldName}
-      className="resize-none"
     />
   );
 };

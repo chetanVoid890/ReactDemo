@@ -23,9 +23,9 @@ const FormShow = (props) => {
 
   // =============================================================
 
-  useEffect(() => {
-    console.log(uniqueKey);
-  }, [uniqueKey]);
+  // useEffect(() => {
+  //   console.log(uniqueKey);
+  // }, [uniqueKey]);
 
   // =============================================================
 
@@ -46,7 +46,7 @@ const FormShow = (props) => {
                     </div>
                   ))}
                   <Button onClick={add} type="primary">
-                    Add Field{" "}
+                    Add Field
                   </Button>
                 </>
               );

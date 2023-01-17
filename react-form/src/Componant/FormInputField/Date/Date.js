@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const DatePickerItem = (props) => {
   const [defaultDate, setDefaultDate] = useState(moment().format("DD/MM/YYYY"));
-
+  // console.log("moment().format", moment().format("DD/MM/YYYY"));
   useEffect(() => {
     setDefaultDate((props.defaultValue || moment()).format("DD/MM/YYYY"));
   }, [props.defaultValue]);
